@@ -14,6 +14,7 @@ function App() {
 	const [sin, setSin] = useState('');
 	const [state, setState] = useState(State.EMPTY);
 
+	// Callbacks
 	const addDigit = (digit: string) => setSin((sin) => sin + digit);
 	const removeLastDigit = () => setSin((sin) => sin.substring(0, sin.length - 1));
 	const clear = () => setSin('');
@@ -29,6 +30,7 @@ function App() {
 		}
 	};
 
+	// Register key event listener
 	useEffect(() => {
 		document.addEventListener('keydown', onKeyDown);
 		return () => document.removeEventListener('keydown', onKeyDown);
