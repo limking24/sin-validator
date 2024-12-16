@@ -6,6 +6,7 @@ describe('double() - Double every alternate digit', () => {
 	it('Valid SIN provided', () => assert.deepEqual(double('046454286'), [0, 8, 6, 8, 5, 8, 2, 1, 6, 6]));
 	it('Valid SIN provided #2', () => assert.deepEqual(double('157565397'), [1, 1, 0, 7, 1, 0, 6, 1, 0, 3, 1, 8, 7]));
 	it('Invalid SIN provided', () => assert.deepEqual(double('04645428d'), []));
+	it('Empty SIN provided', () => assert.deepEqual(double(''), []));
 
 });
 
