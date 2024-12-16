@@ -1,0 +1,15 @@
+.digit-button {
+	background-color: rgb(255, 0, 144);
+	color: rgb(255, 255, 255);
+	border: none;
+	border-radius: 15px;
+	width: 65px;
+	height: 65px;
+	font-size: 25px;
+}
+
+.digit-button:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(255, 0, 144);
+	border: 2px solid rgb(255, 0, 144);
+}

@@ -1,0 +1,10 @@
+.numpad {
+	display: grid;
+	gap: 13px;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+}
+
+.zero {
+	grid-column: span 2;
+}
